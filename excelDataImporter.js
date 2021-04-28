@@ -25,7 +25,7 @@ async function createPostAndSend(room, sensorValueRow, sensorIdx) {
         let dateTime = date.split("T")[0] + "T" + time.split("T")[1]
 
         postSensorValue(sensorId, sensorInputValue, dateTime)
-        await sleep(100)
+        await sleep(10)
         console.log("I sleep")
     } catch (e) {
         console.log("Book:" + room.name.toString() + ", Row" + sensorValueRow)
